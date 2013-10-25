@@ -13,5 +13,5 @@ map '/assets' do
   run sprockets
 end
 
-require './physicals'
-run Physicals
+require './the_button_co'
+run TheButtonCo
