@@ -1,0 +1,62 @@
+@import "bourbon";
+@import "globals/*";
+@import "components/reset";
+@import "grater";
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #fff;
+  font: 18px $avenir-regular;
+  padding: 4em 0 2em;
+  line-height: 1.4em;
+}
+
+a {
+  color: #2d7ddc;
+}
+
+mark {
+  background: #fffeca;
+}
+
+h1 {
+  color: #2D7DDC;
+  font: 72px $avenir-ultralight;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-family: $avenir-demi;
+  font-size: 1.1em;
+  margin-bottom: 0.25em;
+}
+
+article {
+  max-width: 640px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+footer {
+  text-align: center;
+  color: #999;
+  font-size: 0.9em;
+
+  a {
+    color: #999;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #2d7ddc;
+  }
+}
