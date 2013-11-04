@@ -9,22 +9,27 @@
   <h3>The Latest</h3>
   <article>
     <h3><a href="<%= post['url'] %>" rel="external nofollow"><%= post['title'] %></a></h3>
-    <%= post['excerpt_html'] %> <a href="<%= post['url'] %>" rel="external nofollow" class="read-on">Read on &rarr;</a>
+    <%= post['excerpt_html'] %> <a href="<%= post['url'] %>" rel="external nofollow" class="read-on">Keep reading &rarr;</a>
   </article>
+  <p><a href="http://button.roon.io" rel="exernal nofollow" class="more">More updates on Roon</a></p>
   <% end %>
 
   <% if @videos.length > 0 %>
   </div>
-  <ul id="videos" class="wide-container">
-  <% @videos.each do |video| %>
-    <li>
-      <div class="video">
-        <img src="http://placehold.it/16x9">
-        <iframe src="//player.vimeo.com/video/<%= video['id'] %>?byline=0&amp;portrait=0" width="280" height="157" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-    </li>
-  <% end %>
-  </ul>
+  <div id="videos" class="wide-container">
+    <ul>
+    <% @videos.each do |video| %>
+      <li>
+        <div class="video">
+          <img src="http://placehold.it/16x9">
+          <iframe src="//player.vimeo.com/video/<%= video['id'] %>?byline=0&amp;portrait=0" width="280" height="157" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </li>
+    <% end %>
+    </ul>
+    <p><a href="https://vimeo.com/channels/thebuttonco" rel="exernal nofollow" class="more">More videos on Vimeo</a></p>
+  </div>
+
   <div class="container">
   <% end %>
 
@@ -33,5 +38,5 @@
 
   <p>Thanks for listening as I learn.</p>
 
-  <p><a href="http://soff.es"><img src="/assets/sig.svg" alt="Sam Soffes"></a></p>
+  <p><a href="http://soff.es" class="sig"><img src="/assets/sig.svg" alt="Sam Soffes"></a></p>
 </div>
