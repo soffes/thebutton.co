@@ -18,6 +18,15 @@ gem 'rack-canonical-host'
 # Asset pipeline
 gem 'sprockets'
 
+# Data
+gem 'redis'
+
+# Utilities
+gem 'rake', require: false
+
+# Simple HTTP
+gem 'httparty', require: false
+
 # Stylesheets
 gem 'sass'
 gem 'sprockets-sass'

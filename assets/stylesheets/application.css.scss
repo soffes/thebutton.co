@@ -16,6 +16,12 @@ body {
 
 a {
   color: #2d7ddc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
 }
 
 strong {
@@ -39,15 +45,51 @@ h3 {
   margin-bottom: 0.25em;
 }
 
-article {
-  max-width: 660px;
-  min-width: 200px;
-  margin: 0 auto;
+header {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: #888;
+}
+
+.wide-container {
+  max-width: 740px;
+  min-width: 280px;
+  margin: 0 auto 4em;
   padding: 0 10px;
 }
 
-p {
+.container {
+  max-width: 660px;
+  min-width: 280px;
+  margin: 0 auto 3em;
+  padding: 0 10px;
+}
+
+p, ul#videos {
   margin-bottom: 2em;
+}
+
+ul#videos {
+  @include clearfix;
+  line-height: 0;
+  max-width: 880px;
+  min-width: 280px;
+  padding: 0 10px;
+
+  li {
+    float: left;
+    width: 33%;
+    overflow: hidden;
+
+    @media #{$grater-small-media-query} {
+      width: 100%;
+    }
+  }
+
+  a {
+    display: block;
+    font-size: 0.9em;
+  }
 }
 
 footer {
@@ -57,12 +99,19 @@ footer {
 
   a {
     color: #999;
-    text-decoration: none;
   }
 
   a:hover {
-    text-decoration: underline;
     color: #2d7ddc;
+  }
+}
+
+article {
+  margin-bottom: 2em;
+
+  p {
+    display: inline;
+    padding-right: 0.25em;
   }
 }
 

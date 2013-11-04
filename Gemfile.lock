@@ -9,7 +9,11 @@ GEM
     grater (0.1.5)
       sass (>= 3.2.0)
     hike (1.2.3)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     multi_json (1.8.2)
+    multi_xml (0.5.4)
     puma (2.6.0)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
@@ -18,6 +22,8 @@ GEM
       rack (~> 1.0)
     rack-protection (1.5.1)
       rack
+    rake (10.1.0)
+    redis (3.0.4)
     sass (3.2.12)
     shotgun (0.9)
       rack (>= 1.0)
@@ -43,8 +49,11 @@ DEPENDENCIES
   bourbon
   erubis
   grater
+  httparty
   puma
   rack-canonical-host
+  rake
+  redis
   sass
   shotgun
   sinatra
